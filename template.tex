@@ -1,0 +1,52 @@
+\documentclass[twocolumn,10pt]{jarticle} 
+\usepackage[dvipdfmx]{graphicx, color}
+\usepackage[top=15truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}
+\setlength{\columnsep}{3zw} 
+\usepackage[labelsep=period]{caption} 
+%\pagestyle{empty}
+
+
+\makeatletter
+\def\section{\@startsection {section}{1}{\z@}%
+{2.5ex \@plus -1ex \@minus -.2ex}%
+{1ex \@plus.1ex}%
+{\sectionformat}}
+\def\sectionformat{\normalsize\bf}
+
+
+\def\@maketitle{% 
+ \begin{flushright}% 
+ {\@date}% 日付 
+\end{flushright}% 
+ \begin{center}% 
+ {\LARGE \@title \par}% タイトル 
+\end{center}% 
+ \begin{flushright}% 
+ {\large \@author}% 著者 
+\end{flushright}% 
+ \par\vskip 1.5em
+ }
+\makeatother
+
+
+\title{\huge 画像処理に関する研究} 
+\vspace{-1zh}
+\author{\normalsize 東京電機大学工学部情報通信工学科\\電大太郎} 
+\vspace{-1zh}
+\date{1月1日}
+\begin{document}
+\maketitle
+%\thispagestyle{empty} 
+
+
+\section{はじめに}
+あいうえお．
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics{tdu}
+\caption{実験結果}
+\end{center}
+\end{figure}
+
+\end{document}
